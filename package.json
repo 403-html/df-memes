@@ -1,0 +1,12 @@
+{
+  "name": "form-to-pdf",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "jimp": "^0.16.2"
+  },
+  "scripts": {
+    "df": "df() { ls -1 $1 | xargs -I {} node index.js $1/{}; }; df"
+  }
+}
