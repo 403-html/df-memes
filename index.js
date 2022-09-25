@@ -10,7 +10,7 @@ const ext = path.extname(imgPath);
 const isImage = ext === ".jpg" || ext === ".jpeg" || ext === ".png";
 if (!isImage) {
   console.log(`skipping ${imgPath}`);
-  return;
+  process.exit(0);
 }
 
 const Jimp = require("jimp");
